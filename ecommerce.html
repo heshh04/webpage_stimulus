@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html lang="en"> <!--Fixed language error-->
 <html>
 <head>
     <meta charset="UTF-8">
@@ -9,7 +10,7 @@
 <body>
 
     <a href="#main-inventory" class="skip-link">Skip to Inventory</a>
-
+    <main id="main-inventory"></main>
     <header>
         <div class="logo" onclick="location.reload()">VOGUE & VALOR</div>
         <div class="nav-links">
@@ -47,7 +48,8 @@
             </div>
         </div>
         <div class="product-card">
-            <button style="width:100%; height:400px; background:#f9f9f9; border:none; cursor:pointer;">
+            <!--Added aria label-->
+            <button style="width:100%; height:400px; background:#f9f9f9; border:none; cursor:pointer;" aria-label="add items">
                 <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#a1a1aa"><path d="M12 5v14M5 12h14"/></svg>
             </button>
             <div class="product-info">
@@ -82,7 +84,8 @@
             <div style="border-top: 1px solid #eee; padding: 20px 0;">
                 <p style="color: var(--muted);">Your bag is currently empty.</p>
                 <p>Express Checkout:</p>
-                <input type="text" placeholder="Gift Card or Promo Code" >
+                <!--Added aria label-->
+                <input type="text" placeholder="Gift Card or Promo Code" aria-label="gift card or promo code" >
             </div>
             <button class="btn-black" onclick="cls()">Proceed to Secure Pay</button>
         </div>
@@ -107,7 +110,8 @@
             <span class="close-trigger" onclick="cls()">✕</span>
             <h3>Client Login</h3>
             <div style="margin-bottom: 1rem;">
-                <input type="checkbox" style="width: auto;">
+                <!--Added aria-label-->
+                <input type="checkbox" style="width: auto;" aria-label="box">
                 <span>Remember this device</span>
             </div>
             <p style="color: var(--accent); font-size: 0.8rem; text-align: center;">Identity Server Status: Ready</p>
